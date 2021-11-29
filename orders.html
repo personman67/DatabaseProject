@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script defer src="script.js"></script>
+	<title>Cookies Store</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="Store.html"><img src="images/logo.jpg" width="125px"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Store.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1">
+			<h2>Orders</h2>
+			<p>Please Enter Your Preferred items and Quantity here.</p>
+			<form name="tblform", action="http://localhost:8080/orderAdd/", method="post">
+				<table width="80%" id="alignment">
+					<tr>
+						<th>Food Item</th>
+						<th> </th>
+						<th>Quantity</th>
+					</tr>
+					<tr>
+						<td>Item 1:</td>
+						<td>
+							<select id="item1">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q1"></td>
+					</tr>
+					<tr>
+						<td>Item 2:</td>
+						<td>
+							<select id="item2">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q2"></td>
+					</tr>
+					<tr>
+						<td>Item 3:</td>
+						<td><select id="item3">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q3"></td>
+					</tr>
+					<tr>
+						<td>Item 4:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 5:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 6:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 7:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 8:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 9:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					<tr>
+						<td>Item 10:</td>
+						<td><select id="item4">
+								<option value="1">--Select Item--</option>
+								<option value="chipcookie">Chocolate Chip Cookie</option>
+								<option value="muffin">Blueberry Muffin</option>
+								<option value="rvcupcake">Red Velvet Cupcake</option>
+								<option value="pnloaf">Pumpernickel Loaf</option>
+								<option value="ssbagel">Sesame Seed Bagel</option>
+								<option value="ebagel">Everything Bagel</option>
+								<option value="ccupcake">Chocolate Cupcake</option>
+								<option value="rcookie">Raisin Cookie</option>
+								<option value="croissant">Croissant</option>
+								<option value="wbl">White Bread Loaf</option>
+							</select>
+						</td>
+						<td><input type="number" value="0" id="q4"></td>
+					</tr>
+					</tr>
+				</table>
+			</form>
+			<a href="" class="btn">Submit</a>
+			<div>
+				<h3>Type order number to see current orders</h3>
+				<form id="form" , action="http://localhost:8080/orderSearch/" , method="get">
+					<input type="search-box" name="orderSearch">
+					<button>Search</button>
+				</form>
+			</div>
+			<div class="col-2">
+				<img src="images/image11.jpeg">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
