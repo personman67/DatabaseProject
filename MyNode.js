@@ -16,7 +16,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-
+//This configuration is based on the public IP of the AWS instance. Change this configuration as needed to link the application to your own database.
 var con = mysql.createConnection({
     host: "3.141.11.147",
     user: "user",
